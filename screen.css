@@ -1,27 +1,43 @@
-/*共通性設定*/
-body{
-    width: 100%;
-}
+/*版型四*/
 #wrapper{
+    width: 991px;
     display: flex;
-    margin: auto;
+    margin: 50px auto;
 }
 .icon{
     margin-bottom: 10px;
+    width: 100px;
+}
+#nav-info{
+    width: 20%;
 }
 nav > ul {
     list-style-type: none;
     color: rgb(96,190,174);
     padding-left: 0;
 }
+nav > li{
+    font-size:2rem;
+    margin-bottom: 18px;
+}
 aside{
-    display: none;
+    display: block;
+    color: rgb(87,87,87);
+}
+aside > h5{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+aside > p{
+    font-size: 0.8rem;
+    margin-right: 100px;
 }
 .hero-unit{
     margin-bottom: 10px;
 }
 #nd-nav{
     width:100%;
+    display: flex;
     background-color: rgb(239,248,247);
     color: rgb(96,190,174);
     margin-bottom: 10px;
@@ -42,50 +58,20 @@ aside{
     border-right: rgb(217,239,236) solid 0.5px;
     padding: 10px 0px;
 }
+
 .title{
     color: rgb(96,190,174);
-    font-size: 2.2rem;
-    text-align: right;
+    font-size: 1.8rem;
 }
 time{
     color: #AAA;
 }
 #archives{
     display: flex;
-    flex: wrap;
-}
-
-/*版型四*/
-@media screen and (min-width:991px){
-#wrapper{
-    width: 991px;
-    display: flex;
-    margin: 50px auto;
-}
-#nav-info{
-    flex:1;
-}
-nav > li{
-    font-size:2rem;
-    margin-bottom: 18px;
-}
-aside{
-    display: block;
-    color: rgb(87,87,87);
-}
-aside > h5{
-    font-size: 1rem;
-    text-transform: uppercase;
-}
-aside > p{
-    font-size: 0.8rem;
-    margin-right: 100px;
-}
-.icon{
-    width: 100px;
+    flex-wrap: wrap;
 }
 #main{
-    flex:4;
+    width: 80%;
 }
 .title-box{
     position: relative;
@@ -117,14 +103,16 @@ aside > p{
     flex-wrap: wrap;
     margin-bottom: 10px;
 }
-.pic > img{
-    width: 100%;
+.pic {
     height: 445px;
 }
+img{
+    width: 100%;
+}
 .arti-with-pic{
-    padding-left: 10px;
-    padding-right: 10px;
     width: 25%;
+    padding: 0px 10px;
+
 }
 }
 /*版型三*/
