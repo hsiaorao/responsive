@@ -58,7 +58,6 @@ aside > p{
     border-right: rgb(217,239,236) solid 0.5px;
     padding: 10px 0px;
 }
-
 .title{
     color: rgb(96,190,174);
     font-size: 1.8rem;
@@ -112,8 +111,7 @@ img{
 .arti-with-pic{
     width: 25%;
     padding: 0px 10px;
-
-}
+    }
 }
 /*版型三*/
 @media screen and (min-width: 769px) and (max-width: 991px){
@@ -220,7 +218,7 @@ nav >li {
 }
 
 /*版型一*/
-@media screen and (max-width: 480px){
+@media screen and (max-width: 479px){
 #wrapper{
     max-width: 350px;
     margin: 10px auto ;
