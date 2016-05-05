@@ -126,179 +126,161 @@ aside > p{
     padding-right: 10px;
     width: 25%;
 }
-}/*版型三*/
+}
+/*版型三*/
 @media screen and (min-width: 769px) and (max-width: 991px){
-    body {
-        max-width: 768px;
-        margin: 30px auto;
+#wrapper{
+    max-width: 768px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
     }
-
-    aside, .option p {
-        display: none;
+aside{
+    display: none;
     }
-
-    #wrapper, #main {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     }
-
-    #nav-info {
+#nav-info {
         width: 100%;
         display: flex;
         flex-wrap: nowrap;
         padding: 0;
     }
-
-    #nd-nav {
-        position: relative;
-        top: 5px;
+#nd-nav {
+    position: relative;
+    top: 5px;
     }
-
-    nav {
-        position: relative;
-        left: 33%;
+nav {
+    position: relative;
+    left: 33%;
     }
-
-    li {
-        display: inline-block;
-        padding: 0 10px;
-        font-size: 1.7rem;
+nav > li {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 1.7rem;
     }
-
-    .pic {
-        height: 445px;
+.pic {
+    height: 445px;
     }
-
-    .option {
-        padding: 5px 0px;
+.option {
+     padding: 5px 0px;
     }
-
-    #archives {
-        padding-top: 10px;
+#archives {
+    padding-top: 10px;
     }
 }
 
 /*版型二*/
 @media screen and (min-width: 480px) and (max-width: 768px){
-    body {
-        max-width: 480px;
-        margin: 20px auto;
-    }
+#wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 480px;
+    margin: 20px auto;
+}
+aside{
+    display: none;
+}
+.option{
+    display: none;
+}
+#main{
+    width: 100%;
+}
+#archives {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#nav-info {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+}
+.arti-with-pic {
+    width: 50%;
+    padding: 20px 5px;
+}
+.pic {
+    height: 248px;
+    width: 100%;
+}
+#titleA, #titleB {
+    top: 211px;
+    font-size: 1rem;
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+}
+.icon {
+    width: 60px;
+}
+nav {
+    position: relative;
+    left: 3%;
+}
 
-    aside, .option {
-        display: none;
-    }
-
-    #wrapper, #main, #archives {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    #archives {
-        margin-top: 60px;
-    }
-
-    #nav-info {
-        width: 100%;
-        display: flex;
-        flex-wrap: nowrap;
-        padding: 0;
-    }
-
-    .arti-with-pic {
-        width: 50%;
-        padding: 20px 5px;
-    }
-
-    .pic {
-        height: 248px;
-        width: 100%;
-    }
-
-    #titleA, #titleB {
-        top: 211px;
-        font-size: 1rem;
-        text-align: left;
-        padding: 10px;
-        width: 100%;
-    }
-
-    .icon {
-        width: 60px;
-    }
-
-    nav {
-        position: relative;
-        left: 3%;
-    }
-
-    li {
-        display: inline;
-        padding: 10px;
-        font-size: 1.6rem;
+nav >li {
+    display: inline;
+    padding: 10px;
+    font-size: 1.6rem;
     }
 }
 
-
+/*版型一*/
 @media screen and (max-width: 480px){
-    body {
-        max-width: 350px;
-        margin: 10px auto auto auto;
+#wrapper{
+    max-width: 350px;
+    margin: 10px auto ;
+    display: flex;
+    flex-wrap: wrap;
     }
-
-    aside, .option {
-        display: none;
+aside{
+    display: none;
     }
-
-    #wrapper, #main, #archives, #nav-info {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
+#main, #archives, #nav-info {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     }
-
-    #nav-info {
-        padding: 0;
+#nav-info {
+    padding: 0;
     }
-
-    #titleA, #titleB {
-        top: 211px;
-        font-size: 1rem;
-        text-align: left;
-        width: 100%;
-        padding: 10px;
+#titleA, #titleB {
+    top: 211px;
+    font-size: 1rem;
+    text-align: left;
+    width: 100%;
+    padding: 10px;
     }
-
-    .arti-with-pic {
-        width: 100%;
-        padding: 0 0 20px 0;
+.arti-with-pic {
+    width: 100%;
+    padding: 0 0 20px 0;
     }
-
-    .hero-unit {
-        height: 248px;
+.hero-unit {
+    height: 248px;
     }
-
-    .icon {
-        width: 60px;
-        order: 2;
-        margin: 0 auto;
-        margin-bottom: 10px;
+.icon {
+    width: 60px;
+    order: 2;
+    margin: 0 auto;
+    margin-bottom: 10px;
     }
-
-    ul {
-        display: flex;
-        flex-wrap: nowrap;
+nav {
+    margin: 0 auto;
     }
-
-    nav {
-        margin: 0 auto;
+nav > ul {
+    display: flex;
+    flex-wrap: nowrap;
     }
-
-    li {
-        padding: 5px;
-        font-size: 1.4rem;
-        display: inline;
-        order: 1;
+nav > li {
+    padding: 5px;
+    font-size: 1.4rem;
+    display: inline;
+    order: 1;
     }
 }
