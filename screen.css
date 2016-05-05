@@ -86,9 +86,9 @@ time{
 }
 #titleB{
     clear: both;
-    text-align: right;
-    position: relative;
     background-color: black;
+    position: relative;
+    float: right;
     color: white;
     padding: 15px;
     font-size: 2.2rem;
@@ -121,6 +121,15 @@ img{
     display: flex;
     flex-wrap: wrap;
     }
+nav {
+    position: relative;
+    left: 33%;
+    }
+nav > li {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 1.7rem;
+    }
 aside{
     display: none;
     }
@@ -138,15 +147,6 @@ aside{
 #nd-nav {
     position: relative;
     top: 5px;
-    }
-nav {
-    position: relative;
-    left: 33%;
-    }
-nav > li {
-    display: inline-block;
-    padding: 0 10px;
-    font-size: 1.7rem;
     }
 .pic {
     height: 445px;
@@ -167,6 +167,23 @@ nav > li {
     max-width: 480px;
     margin: 20px auto;
 }
+nav {
+    position: relative;
+}
+nav >li {
+    display: inline;
+    padding: 10px;
+    font-size: 1.6rem;
+    }
+.icon {
+    width: 60px;
+}
+#nav-info {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+}
 aside{
     display: none;
 }
@@ -181,12 +198,6 @@ aside{
     display: flex;
     flex-wrap: wrap;
 }
-#nav-info {
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 0;
-}
 .arti-with-pic {
     width: 50%;
     padding: 20px 5px;
@@ -196,25 +207,11 @@ aside{
     width: 100%;
 }
 #titleA, #titleB {
-    top: 211px;
     font-size: 1rem;
     text-align: left;
     padding: 10px;
     width: 100%;
 }
-.icon {
-    width: 60px;
-}
-nav {
-    position: relative;
-    left: 3%;
-}
-
-nav >li {
-    display: inline;
-    padding: 10px;
-    font-size: 1.6rem;
-    }
 }
 
 /*版型一*/
@@ -224,31 +221,6 @@ nav >li {
     margin: 10px auto ;
     display: flex;
     flex-wrap: wrap;
-    }
-aside{
-    display: none;
-    }
-#main, #archives, #nav-info {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    }
-#nav-info {
-    padding: 0;
-    }
-#titleA, #titleB {
-    top: 211px;
-    font-size: 1rem;
-    text-align: left;
-    width: 100%;
-    padding: 10px;
-    }
-.arti-with-pic {
-    width: 100%;
-    padding: 0 0 20px 0;
-    }
-.hero-unit {
-    height: 248px;
     }
 .icon {
     width: 60px;
@@ -268,5 +240,29 @@ nav > li {
     font-size: 1.4rem;
     display: inline;
     order: 1;
+    }
+aside{
+    display: none;
+    }
+#main, #archives, #nav-info {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    }
+#nav-info {
+    padding: 0;
+    }
+#titleA, #titleB {
+    font-size: 1rem;
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+    }
+.arti-with-pic {
+    width: 100%;
+    padding: 0 0 20px 0;
+    }
+.hero-unit {
+    height: 248px;
     }
 }
